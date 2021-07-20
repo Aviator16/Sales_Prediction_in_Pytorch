@@ -12,5 +12,5 @@ The task requires predicting sales for a given item from a given store on a futu
 
 I split the date column to **year**, **month (1-12)**,**day-of-week (1-7)** & **day-of-month (1-31)**. The total number of variables after preprocessing would result in more then 115 features and the datset consists of 9,13,000 samples so I used **Categorical Embeddings** for feature selection to reduce the complexity of the model. It resulted in 60 unique variables.
 
-I have used several models for a comparative study and have done it using **PyTorch**.
+I have used several models for a comparative study and have done it using **PyTorch**. For each of these models, I have used **Mean Square Error** as my loss function and have used **Adam optimiser** for the purpose of training my weights.
 ### 1. Feed Forward Neural Network:
