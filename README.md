@@ -20,3 +20,26 @@ It consists of 3 hidden layers having 512, 128 and 32 nodes each. Each batch ran
 * Root Mean Square error on test set is 8.725558357325898
 * Mean Absolute Percentage Error on test set is 0.15158092560938577
 * Adjusted R2 score on test set is 0.9235231260413219
+### 2. Long Short Term Memory Neural Network:
+It consists of 2 LSTM layers and 2 Fully connected layers and an output layer having 112,96,64 & 16 nodes respectively. Each batch ran for 15 epochs meaning in total the model trained for 120 epochs. Evaluating the model on the test set gave the following results:
+* R2 score on test set is 0.9130831700643351
+* Mean Absolute Error on test set is 7.067161381278626
+* Root Mean Square error on test set is 9.302233612700073
+* Mean Absolute Percentage Error on test set is 0.15067687205231767
+* Adjusted R2 score on test set is 0.9130803124151123
+### 3. Temporal Convolution Network:
+It consists of 2 TCN layers and 2 Fully connected layers and an output layer having 112,96,64 & 16 nodes respectively. Each batch ran for 50 epochs meaning in total the model trained for 400 epochs. Evaluating the model on the test set gave the following results:
+* R2 score on test set is 0.22736186203334408
+* Mean Absolute Error on test set is 20.519154600854115
+* Root Mean Square error on test set is 27.734693681675626
+* Mean Absolute Percentage Error on test set is 0.41503353019106237
+* Adjusted R2 score on test set is 0.22733645925719492
+### 4. Hybrid Network of TCN & LSTM:
+It consists of 1 TCN layer, 1 LSTM layer and 2 Fully connected layers and an output layer having 112,96,64 & 16 nodes respectively. Each batch ran for 10 epochs meaning in total the model trained for 80 epochs. Evaluating the model on the test set gave the following results:
+* R2 score on test set is -0.0698741653697148
+* Mean Absolute Error on test set is 25.29713485937249
+* Root Mean Square error on test set is 32.63635535486093
+* Mean Absolute Percentage Error on test set is 0.5577620565618376
+* Adjusted R2 score on test set is -0.06990934066406718
+
+## Conclusion
