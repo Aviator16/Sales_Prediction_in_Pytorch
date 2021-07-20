@@ -12,5 +12,11 @@ The task requires predicting sales for a given item from a given store on a futu
 
 I split the date column to **year**, **month (1-12)**,**day-of-week (1-7)** & **day-of-month (1-31)**. The total number of variables after preprocessing would result in more then 115 features and the datset consists of 9,13,000 samples so I used **Categorical Embeddings** for feature selection to reduce the complexity of the model. It resulted in 60 unique variables.
 
-I have used several models for a comparative study and have done it using **PyTorch**. For each of these models, I have used **Mean Square Error** as my loss function and have used **Adam optimiser** for the purpose of training my weights.
+I have used several models for a comparative study and have done it using **PyTorch**. For each of these models, I have used **Mean Square Error** as my loss function and have used **Adam optimiser** for the purpose of training my weights. I have trained the models on a Ryzen 5 Hexa core 4600H CPU.
 ### 1. Feed Forward Neural Network:
+It consists of 3 hidden layers having 512, 128 and 32 nodes each. Each batch ran for 32 epochs meaning in total the model trained for 256 epochs. Evaluating the model on the test set gave the following results:
+* R2 score on test set is 0.923525640363284
+* Mean Absolute Error on test set is 6.846392510761627
+* Root Mean Square error on test set is 8.725558357325898
+* Mean Absolute Percentage Error on test set is 0.15158092560938577
+* Adjusted R2 score on test set is 0.9235231260413219
